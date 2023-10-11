@@ -6,11 +6,13 @@ document.addEventListener('DOMContentLoaded', function() {
       var selectedValue = input.value;
 
       if (selectedValue === 'option1') {
-        window.location.href = '../../child/chap06_ex1';
+        window.location.href = 'emailServlet.html';
       } else if (selectedValue === 'option2') {
-        window.location.href = '../../child/chap06_ex2';
+        window.location.href = 'surveyServlet.html';
       } else if (selectedValue === 'option3') {
-        window.location.href = '../../child/chap07_ex2';
+        window.location.href = 'sessionCookie.html';
+      } else if (selectedValue === 'option4') {
+        window.location.href = 'cartServlet.html';
       }
     });
   });

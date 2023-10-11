@@ -1907,7 +1907,7 @@ body{
 }
 
 .option {
-    width: 80.5px;
+    width: 60.5px;
     height: 28px;
     position: relative;
     top: 2px;
@@ -2247,6 +2247,12 @@ select{
     color: #000;
 }
 
+.cart-custom-content h6{
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
 /* === removing default button style ===*/
 .download-btn {
     margin: 0;
@@ -2260,7 +2266,7 @@ select{
 .download-btn {
     --border-right: 6px;
     --text-stroke-color: rgba(255,255,255,0.6);
-    --animation-color: #000;
+    --animation-color: #d2b356;
     --fs-size: 1em;
     letter-spacing: 3px;
     text-decoration: none;
@@ -2283,4 +2289,69 @@ select{
     overflow: hidden;
     transition: 0.5s;
     -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.add-cart-btn {
+    position: relative;
+    display: inline-block;
+    padding: 14px 15px;
+    border: 2px solid #333;
+    text-transform: uppercase;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.add-cart-btn::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -2px;
+    width: calc(100% + 6px);
+    height: calc(100% - -4px);
+    background-color: #d2b356;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+    z-index: -1;
+}
+
+.add-cart-btn::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 50px);
+    background-color: #d2b356;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+}
+
+.add-cart-btn:hover::before {
+    transform: translateY(-25px);
+    height: 0;
+}
+
+.add-cart-btn:hover::after {
+    transform: scaleX(0);
+    transition-delay: 0.15s;
+}
+
+.add-cart-btn:hover {
+    color: #333;
+    border: 2px solid #333;
+}
+
+.add-cart-btn span {
+    position: relative;
+    z-index: 3;
+}
+
+.cart-btn {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
 }

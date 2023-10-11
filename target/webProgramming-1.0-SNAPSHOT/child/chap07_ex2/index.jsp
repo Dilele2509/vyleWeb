@@ -56,7 +56,7 @@
             </div>
         </div>
         <div class="list-row list-items">
-            <a class="song-item col-2 aos-init aos-animate" href="/child/chap07_ex2/register.jsp">
+            <a class="song-item col-2 aos-init aos-animate" href="/download02?action=checkUser&amp;productCode=8601">
                 <div class="cart-custom">
                     <div class="cart-custom-content">
                         <h5>86 (the band) - True Life Songs and Pictures</h5>
@@ -68,7 +68,7 @@
                 </div>
             </a>
 
-            <a class="song-item col-2 aos-init aos-animate" href="/child/chap07_ex2/register.jsp">
+            <a class="song-item col-2 aos-init aos-animate" href="/download02?action=checkUser&amp;productCode=pf01">
                 <div class="cart-custom">
                     <div class="cart-custom-content">
                         <h5>Paddlefoot - The First CD</h5>
@@ -80,7 +80,7 @@
                 </div>
             </a>
 
-            <a class="song-item col-2 aos-init aos-animate" href="/child/chap07_ex2/register.jsp">
+            <a class="song-item col-2 aos-init aos-animate" href="/download02?action=checkUser&amp;productCode=pf02">
                 <div class="cart-custom">
                     <div class="cart-custom-content">
                         <h5>Paddlefoot - The Second CD</h5>
@@ -92,7 +92,7 @@
                 </div>
             </a>
 
-            <a class="song-item col-2 aos-init aos-animate" href="/child/chap07_ex2/register.jsp">
+            <a class="song-item col-2 aos-init aos-animate" href="/download02?action=checkUser&amp;productCode=jr01">
                 <div class="cart-custom">
                     <div class="cart-custom-content">
                         <h5>Joe Rut - Genuine Wood Grained Finish</h5>
