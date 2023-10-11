@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', function() {
       var selectedValue = input.value;
 
       if (selectedValue === 'option1') {
-        window.location.href = 'emailServlet.html';
+        window.location.href = '../../child/chap06_ex1';
       } else if (selectedValue === 'option2') {
-        window.location.href = 'surveyServlet.html';
+        window.location.href = '../../child/chap06_ex2';
       } else if (selectedValue === 'option3') {
-        window.location.href = 'sessionCookie.html';
+        window.location.href = '../../child/chap07_ex2';
       } else if (selectedValue === 'option4') {
-        window.location.href = 'cartServlet.html';
+        window.location.href = '../../child/chap09_ex2';
       }
     });
   });

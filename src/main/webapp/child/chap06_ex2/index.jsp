@@ -141,6 +141,12 @@
                     <span class="span">3</span>
                 </div>
             </div>
+            <div class="option">
+                <input value="option4" name="btn" type="radio" class="change-page">
+                <div class="change-page-btn">
+                    <span class="span">4</span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
