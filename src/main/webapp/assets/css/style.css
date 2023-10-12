@@ -2427,14 +2427,6 @@ select{
     width: 100%;
 }
 
-.return-btn:hover a{
-    color: #d2b356;
-}
-
-.return-btn a{
-    color: #000;
-}
-
 .flex-col-imp{
     flex-direction: column !important;
 }
