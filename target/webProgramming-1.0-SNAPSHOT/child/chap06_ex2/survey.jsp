@@ -1,40 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Murach's Java Servlets and JSP</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/child/chap06_ex2/styles/main.css" type="text/css"/>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/styles/addition.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks for Taking</title>
+
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" title="Favicon"/>
+
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+    <!-- Responsive CSS File -->
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+
+    <!-- Namari Color CSS -->
+    <link rel="stylesheet" href="../../assets/css/namari-color.css">
+
+    <!--Icon Fonts - Font Awesome Icons-->
+    <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
+
+    <!-- Animate CSS-->
+    <link href="../../assets/css/animate.css" rel="stylesheet" type="text/css">
+
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
-    <h1>Thanks for taking our survey!</h1>
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status" class="la-ball-triangle-path">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<!--End of Preloader-->
+<div class="row display-flex contain-inputPage">
+    <div class="contain-info">
+        <h1>Thanks for taking our survey!</h1>
 
-    <p>Here is the information that you entered:</p>
+        <p>Here is the information that you entered:</p>
 
-    <label>Email:</label>
-    <span>${user.email}</span><br>
-    <label>First Name:</label>
-    <span>${user.firstName}</span><br>
-    <label>Last Name:</label>
-    <span>${user.lastName}</span><br>
-    <label>Heard From:</label>
-    <span>${user.heardFrom}</span><br>
-    <label>Updates:</label>
-    <span>${user.wantsUpdates}</span><br>
+        <div class="entered-info">
+            <label>Email:</label>
+            <span>${user.email}</span><br>
+            <label>First Name:</label>
+            <span>${user.firstName}</span><br>
+            <label>Last Name:</label>
+            <span>${user.lastName}</span><br>
+            <label>Heard From:</label>
+            <span>${user.heardFrom}</span><br>
+            <label>Updates:</label>
+            <span>${user.wantsUpdates}</span><br>
+        </div>
 
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-    <c:if test="${user.wantsUpdates == 'Yes'}">
-        <label>Contact Via:</label>
-        <span>${user.contactVia}</span>
-    </c:if>
+        <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+        <c:if test="${user.wantsUpdates == 'Yes'}">
+            <label>Contact Via:</label>
+            <span>${user.contactVia}</span>
+        </c:if>
 
-    <br>
+        <p class="p-describe">Click on the Back
+            button in your browser or the Return button shown
+            below.</p>
 
-    <form action="/child/chap06_ex2/index.jsp" method="post">
-        <input type="hidden" name="action" value="join">
-        <input type="submit" value="Return">
-    </form>
-    
-</body>
-</html>
+        <form action="/child/chap06_ex1/" method="post">
+            <input type="hidden" name="action" value="join">
+            <button class="return-btn" type="submit">Return
+            </button>
+        </form>
+    </div>
+</div>

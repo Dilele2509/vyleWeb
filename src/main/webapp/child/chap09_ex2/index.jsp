@@ -63,8 +63,8 @@
                         <h6>$14.95</h6>
                         <form action = "/cart92" method = "post">
                             <input type="hidden" name="productCode" value="8601">
-                            <button class="cart-btn">
-                                <a href="#" class="add-cart-btn"><span>
+                            <button class="cart-btn" type="submit">
+                                <a class="add-cart-btn"><span>
                                         Add To Cart
                                     </span></a>
                             </button>
@@ -80,8 +80,8 @@
                         <h6>$12.95</h6>
                         <form action = "/cart92" method = "post">
                             <input type="hidden" name="productCode" value="pf01">
-                            <button class="cart-btn">
-                                <a href="#" class="add-cart-btn"><span>
+                            <button class="cart-btn" type="submit">
+                                <a class="add-cart-btn"><span>
                                         Add To Cart
                                     </span></a>
                             </button>
@@ -97,8 +97,8 @@
                         <h6>$14.95</h6>
                         <form action = "/cart92" method = "post">
                             <input type="hidden" name="productCode" value="pf02">
-                            <button class="cart-btn">
-                                <a href="#" class="add-cart-btn"><span>
+                            <button class="cart-btn" type="submit">
+                                <a class="add-cart-btn"><span>
                                         Add To Cart
                                     </span></a>
                             </button>
@@ -114,8 +114,8 @@
                         <h6>$14.95</h6>
                         <form action = "/cart92" method = "post">
                             <input type="hidden" name="productCode" value="jr01">
-                            <button class="cart-btn">
-                                <a href="#" class="add-cart-btn"><span>
+                            <button class="cart-btn" type="submit">
+                                <a class="add-cart-btn"><span>
                                         Add To Cart
                                     </span></a>
                             </button>
