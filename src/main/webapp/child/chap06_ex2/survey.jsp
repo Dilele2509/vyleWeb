@@ -32,48 +32,61 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<!-- Preloader -->
-<div id="preloader">
-    <div id="status" class="la-ball-triangle-path">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</div>
-<!--End of Preloader-->
-<div class="row display-flex contain-inputPage">
-    <div class="contain-info">
-        <h1>Thanks for taking our survey!</h1>
-
-        <p>Here is the information that you entered:</p>
-
-        <div class="entered-info">
-            <label>Email:</label>
-            <span>${user.email}</span><br>
-            <label>First Name:</label>
-            <span>${user.firstName}</span><br>
-            <label>Last Name:</label>
-            <span>${user.lastName}</span><br>
-            <label>Heard From:</label>
-            <span>${user.heardFrom}</span><br>
-            <label>Updates:</label>
-            <span>${user.wantsUpdates}</span><br>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status" class="la-ball-triangle-path">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-
-        <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-        <c:if test="${user.wantsUpdates == 'Yes'}">
-            <label>Contact Via:</label>
-            <span>${user.contactVia}</span>
-        </c:if>
-
-        <p class="p-describe">Click on the Back
-            button in your browser or the Return button shown
-            below.</p>
-
-        <form action="/child/chap06_ex1/" method="post">
-            <input type="hidden" name="action" value="join">
-            <button class="return-btn" type="submit">Return
-            </button>
-        </form>
     </div>
-</div>
+    <!--End of Preloader-->
+    <div class="row display-flex contain-inputPage">
+        <div class="contain-info">
+            <h1>Thanks for taking our survey!</h1>
+
+            <p>Here is the information that you entered:</p>
+
+            <div class="entered-info">
+                <label>Email:</label>
+                <span>${user.email}</span><br>
+                <label>First Name:</label>
+                <span>${user.firstName}</span><br>
+                <label>Last Name:</label>
+                <span>${user.lastName}</span><br>
+                <label>Heard From:</label>
+                <span>${user.heardFrom}</span><br>
+                <label>Updates:</label>
+                <span>${user.wantsUpdates}</span><br>
+            </div>
+
+            <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+            <c:if test="${user.wantsUpdates == 'Yes'}">
+                <label>Contact Via:</label>
+                <span>${user.contactVia}</span>
+            </c:if>
+
+            <p class="p-describe">Click on the Back
+                button in your browser or the Return button shown
+                below.</p>
+
+            <form action="/child/chap06_ex1/" method="post">
+                <input type="hidden" name="action" value="join">
+                <button class="return-btn" type="submit">Return
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- Include JavaScript resources -->
+    <script src="../../assets/js/jquery.1.8.3.min.js"></script>
+    <script src="../../assets/js/wow.min.js"></script>
+    <script src="../../assets/js/jquery.enllax.min.js"></script>
+    <script src="https://kit.fontawesome.com/7c3d655189.js" crossorigin="anonymous"></script>
+    <script src="../../assets/js/jquery.scrollUp.min.js"></script>
+    <script src="../../assets/js/jquery.easing.min.js"></script>
+    <script src="../../assets/js/jquery.stickyNavbar.min.js"></script>
+    <script src="../../assets/js/jquery.waypoints.min.js"></script>
+    <script src="../../assets/js/images-loaded.min.js"></script>
+    <script src="../../assets/js/lightbox.min.js"></script>
+    <script src="../../assets/js/site.js"></script>
+</body>

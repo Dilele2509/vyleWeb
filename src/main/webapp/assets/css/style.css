@@ -2421,6 +2421,7 @@ select{
 
 .return-btn:hover {
     cursor: pointer;
+    color: #fff;
 }
 
 .return-btn:hover::before {
@@ -2526,6 +2527,12 @@ select{
 .info-form .btn-form{
     max-width: 200px;
     padding: 10px 30px 20px 30px;
+}
+
+.list-title .band-name{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 .cta {
     display: flex;
