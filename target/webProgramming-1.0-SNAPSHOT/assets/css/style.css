@@ -2642,3 +2642,246 @@ select{
 .view-cookie:hover{
     color: #fff;
 }
+.contain-info .cookies-info-title{
+    font-size: 1.5rem;
+}
+
+.contain-info .cookies-info-value{
+    color: #333;
+}
+
+.contain-song .cookie-info-container{
+    min-width: 10rem;
+}
+
+.contain-song .cart-custom-content {
+    /* width: 100%; */
+    overflow-wrap: anywhere;
+}
+
+.cookie-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.not-scale{
+    transform: scale(1) !important;
+}
+
+.not-scale:hover{
+    cursor: default;
+}
+
+.del-cookies-btn {
+    /*margin-top: 25px;*/
+    min-width: 12rem;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #e62222;
+}
+
+.del-cookies-btn, .del-cookies-btn .text-btn {
+    transition: 200ms;
+}
+
+.del-cookies-btn .text-btn {
+    transform: translateX(-20px);
+    color: white;
+    font-weight: bold;
+}
+
+.del-cookies-btn .icon-del-cookies {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(70px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.del-cookies-btn .svg-btn {
+    width: 15px;
+    fill: #eee;
+}
+
+.del-cookies-btn:hover {
+    background: #ff3636;
+}
+
+.del-cookies-btn:hover .text-btn {
+    color: transparent;
+}
+
+.del-cookies-btn:hover .icon-del-cookies {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+.del-cookies-btn:focus {
+    outline: none;
+}
+
+.del-cookies-btn:active .icon-del-cookies .svg-btn {
+    transform: scale(0.8);
+}
+
+.view-cookie-delPage{
+    color: #fff;
+    padding: 0;
+}
+
+.view-cookie-delPage:hover{
+    color: #333;
+}
+
+.contain-info .text-del-cookie{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #c41b1b;
+}
+
+.cookie-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* cart shop */
+.shopping-cart {
+    width: 750px;
+    height: 423px;
+    margin: 80px auto;
+    background: #d2b356;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.title-cart {
+    height: 60px;
+    border-bottom: 1px solid #E1E8EE;
+    padding: 20px 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cart-item {
+    padding: 20px 30px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-item:nth-child(3) {
+    border-top:  1px solid #E1E8EE;
+    border-bottom:  1px solid #E1E8EE;
+}
+.cart-buttons {
+    position: relative;
+}
+.del-product-btn{
+    display: inline-block;
+    Cursor: pointer;
+}
+.del-product-btn {
+    background: none;
+    font-size: 1rem;
+    border: 0;
+}
+
+@keyframes animate {
+    0%   { background-position: left;  }
+    50%  { background-position: right; }
+    100% { background-position: right; }
+}
+
+.pro-name-item {
+    padding-top: 10px;
+    margin-right: 60px;
+    width: 115px;
+}
+
+.pro-name-item h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.pro-name-item span:first-child {
+    margin-bottom: 5px;
+}
+.pro-name-item span:last-child {
+    font-weight: 300;
+    margin-top: 8px;
+    color: #86939E;
+}
+.quantity {
+    /* padding-top: 20px;
+    margin-right: 60px; */
+}
+.quantity input {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+}
+
+.minus-cart-btn,
+.plus-cart-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #E1E8EE;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+button:focus,
+input:focus {
+    outline:0;
+}
+
+.product-price,
+.total-price {
+    width: 83px;
+    /* padding-top: 27px; */
+    text-align: center;
+    font-size: 1rem;
+    color: #43484D;
+    font-weight: 500;
+}
+
+.total-price{
+    font-weight: 600;
+    color: #111111;
+}
+
+.del-product-btn:hover i,
+.plus-cart-btn:hover i,
+.minus-cart-btn:hover i{
+    transform: scale(1.3);
+    transition: all ease-in 0.01s;
+    color: #fff;
+}
