@@ -42,4 +42,24 @@ public class Cart implements Serializable {
             }
         }
     }
+
+    /*public double calculateTotalPrice() {
+        double total = 0.0;
+
+        for (LineItem item : items) {
+            String totalCurrencyFormat = item.getTotalCurrencyFormat();
+
+            // Assuming getTotalCurrencyFormat returns a String like "$12.34"
+            // Parse the string and add the numeric value to the total
+            total += parseCurrencyFormat(totalCurrencyFormat);
+        }
+
+        return total;
+    }
+
+    // Helper method to parse currency format and return a numeric value
+    private double parseCurrencyFormat(String currencyFormat) {
+        // Remove currency symbols and commas, then parse the value
+        return Double.parseDouble(currencyFormat.replaceAll("[^\\d.]+", ""));
+    }*/
 }

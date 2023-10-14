@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var selectedValue = input.value;
 
       if (selectedValue === 'option1') {
-        window.location.href = '../../child/chap06_ex1';
+        window.location.href = '../../child/chap08_ex1';
       } else if (selectedValue === 'option2') {
         window.location.href = '../../child/chap06_ex2';
       } else if (selectedValue === 'option3') {

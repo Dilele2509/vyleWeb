@@ -70,7 +70,7 @@
                 button in your browser or the Return button shown
                 below.</p>
 
-            <form action="/child/chap06_ex1/" method="post">
+            <form action="/child/chap06_ex2/" method="post">
                 <input type="hidden" name="action" value="join">
                 <button class="return-btn" type="submit">Return
                 </button>
