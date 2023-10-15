@@ -48,9 +48,10 @@
 <!--End of Preloader-->
 <div class="row display-flex contain-inputPage">
     <div class="contain-info">
-        <h1>Thanks for joining our email list</h1>
+        <h1 style="text-align: center">Thanks for joining our<br>email list</h1>
 
         <p>Here is the information that you entered:</p>
+
         <div class="entered-info">
             <label>Email:</label>
             <span>${user.email}</span><br>
@@ -60,11 +61,17 @@
             <span>${user.lastName}</span><br>
         </div>
 
-        <p class="p-describe">To enter another email address, click on the Back
-            button in your browser or the Return button shown
-            below.</p>
+        <p class="describe-entered-info">This email address was added to our list on ${requestScope.currentDate}</p>
 
-        <form action="/child/chap06_ex1/" method="post">
+        <p class="describe-entered-info">The first address on our list is ${sessionScope.users[0].email}<br>
+            The second address on our list is ${sessionScope.users[1].email}
+        </p>
+
+        <p class="describe-entered-info">For customer service, contact ${initParam.custServEmail}</p>
+
+        <p style="text-align: center">Click the Return button shown below to return previous page</p>
+        <br>
+        <form action="/child/chap08_ex1/" method="post">
             <input type="hidden" name="action" value="join">
             <button class="return-btn" type="submit">Return
             </button>

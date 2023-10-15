@@ -48,19 +48,22 @@
 
         <a href="../../index.html" class="text">Home</a>
     </button>
-    <p class="current-year">Current Year: </p>
     <div class="info-form">
-        <form action="/emailList61" method="post">
+        <form action="/emailList81" method="post">
             <h2>Join our email list</h2>
-            <p>Please enter your name and email below</p>
+            <p style="color: #333; padding-bottom: 20px">Please enter your name and email below</p>
             <input type="hidden" name="action" value="add">
-            <input class="info-input" placeholder="First Name" type="text" name="firstName"><br>
-            <input class="info-input" placeholder="Last Name" type="text" name="lastName"><br>
-            <input class="info-input" placeholder="Email" type="email" name="email"><br>
+            <p>Email:</p>
+            <input class="info-input" type="email" name="email" value="${user.email}"><br>
+            <p>First Name:</p>
+            <input class="info-input" type="text" name="firstName" value="${user.firstName}"><br>
+            <p>Last Name:</p>
+            <input class="info-input" type="text" name="lastName" value="${user.lastName}"><br>
+            <label>&nbsp;</label>
             <p class="notify">
                 <i></i>
             </p>
-            <input type="submit" name="submit" id="submit" class="submit-btn">
+            <input type="submit" value="Join Now" class="submit-btn">
         </form>
     </div>
     <div class="moving-btn">
